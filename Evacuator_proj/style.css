@@ -1,0 +1,334 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul, li {
+   list-style-type: none;
+}
+nav a {
+    position: relative;
+    font-family: 'Arial';
+    text-decoration: none;
+    color: #fff;
+
+    transition: color 0.2s ease-in-out;
+}
+nav a:hover {
+    color: #d99546;
+}
+nav a:hover::after {
+    width: 100%;
+    left: 0%;
+
+    bottom: -15px;
+    opacity: 1;
+}
+nav a::after {
+    content: "";
+    pointer-events: none;
+    bottom: -25px;
+    opacity: 0;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #d99546;
+
+    transition: bottom 0.3s, opacity 0.3s;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    margin-left: 82px;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+    background: #19181D;
+}
+.container {
+    display: flex;
+    margin-left: 170px;
+}
+.logo {
+    width: 186px;
+    height: 186px;
+}
+
+.navigation-table {
+    display: flex;
+    gap: 65px;
+}
+
+.viber {
+    align-self: center;
+
+    width: 65px;
+    height: 43px;
+
+    margin-left: 120px;
+}
+
+.phone-table {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.phone-table a {
+    position: relative;
+    font-family: 'Arial';
+    text-decoration: none;
+    color: #fff;
+
+    transition: color 0.2s ease-in-out;
+}
+.phone-table a:hover {
+    color: #d99546;
+}
+.phone-table a:hover::after {
+    width: 100%;
+    left: 0%;
+
+    bottom: -15px;
+    opacity: 1;
+}
+.phone-table a::after {
+    content: "";
+    pointer-events: none;
+    bottom: -25px;
+    opacity: 0;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #d99546;
+
+    transition: bottom 0.3s, opacity 0.3s;
+}
+
+
+.head-cost {
+    font-family: 'Arial';
+    font-weight: 900;
+    font-size: 16px;
+
+    color: #D99546;
+}
+
+h1 {
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 74px;
+    text-align: left;
+
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.container-holder {
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+.order-now {
+    display: flex;
+    width: 200px;
+    height: 55px;   
+    background: #D29448;
+    border-radius: 30px;
+
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 14px;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.order-now:hover {
+    background: #ffb459;
+}
+
+.desc-head {
+    display: flex;
+    margin-top: 48px;
+    gap: 123px;
+    color: #fff;
+
+    font-family: 'Arial';
+    font-size: 15px;
+    line-height: 26px;
+}
+.evacuator-decor {
+    position: relative;
+}
+.evacuator-img {
+    width: 666px;
+    height: 337px;
+
+    margin-top: 46px;
+}
+.shar-img {
+    width: 440px;
+    height: 448px;
+    position: absolute;
+    bottom: 20px;
+    left: 80px;
+    z-index: -1;
+}
+
+.arrow-img {
+    margin-left: 500px;
+}
+.scroll-text {
+    position: absolute;
+    left: 435px;
+    bottom: -40px;
+
+    animation: scroll-anim 20s linear infinite;
+}
+
+@keyframes scroll-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.our-cost {
+    margin-top: 45px;
+    color: #fff;
+}
+
+.our-cost p {
+    font-family: 'Arial';
+    color: #D29448;
+    margin-bottom: 37px;
+}
+
+.our-holder h3 {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 77px;
+
+    color: #EAEAEA;
+}
+.our-holder {
+    display: flex;
+    align-items: flex-end;
+    gap: 250px;
+    margin-bottom: 62px;
+}
+.our-holder p {
+    color: #fff;
+}
+.yellow-line {
+    width: 1160px;
+    border-color: #D29448;
+    margin-bottom: 56px;
+}
+
+.our-cost-more {
+    display: flex;
+    color: #fff;
+}
+
+.undelayed {
+    font-family: 'Arial';
+    font-weight: 700;
+    font-size: 22px; 
+    margin-right: 55px;
+
+    color: #CB934A;
+}
+
+.our-cost-more p {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 17px;
+    
+    line-height: 32px;
+    color: #fff;
+    margin-right: 115px;
+}
+
+.our-cost-more h3 {
+    font-family: 'Arial';
+    font-weight: 400;
+    font-size: 49px;
+
+    color: #D29448;
+}
