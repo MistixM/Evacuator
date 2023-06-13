@@ -1,3 +1,4 @@
+
 /* Указываем box sizing */
 *,
 *::before,
@@ -34,7 +35,7 @@ ul, li {
 }
 nav a {
     position: relative;
-    font-family: 'Arial';
+    font-family: 'TildaSans-Regular';
     text-decoration: none;
     color: #fff;
 
@@ -141,7 +142,7 @@ body {
 
 .phone-table a {
     position: relative;
-    font-family: 'Arial';
+    font-family: 'TildaSans-Medium';
     text-decoration: none;
     color: #fff;
 
@@ -173,16 +174,14 @@ body {
 
 
 .head-cost {
-    font-family: 'Arial';
-    font-weight: 900;
+    font-family: 'TildaSans-Black';
     font-size: 16px;
 
     color: #D99546;
 }
 
 h1 {
-    font-family: 'Arial';
-    font-weight: 700;
+    font-family: 'TildaSans-Medium';
     font-size: 74px;
     text-align: left;
 
@@ -205,8 +204,7 @@ h1 {
 
     text-decoration: none;
     color: #fff;
-    font-family: 'Arial';
-    font-weight: 700;
+    font-family: 'TildaSans-Bold';
     font-size: 14px;
 
     align-items: center;
@@ -226,8 +224,8 @@ h1 {
     gap: 123px;
     color: #fff;
 
-    font-family: 'Arial';
-    font-size: 15px;
+    font-family: 'TildaSans-Regular';
+    font-size: 17px;
     line-height: 26px;
 }
 .evacuator-decor {
@@ -253,8 +251,8 @@ h1 {
 }
 .scroll-text {
     position: absolute;
-    left: 435px;
-    bottom: -40px;
+    left: 430px;
+    bottom: -35px;
 
     animation: scroll-anim 20s linear infinite;
 }
@@ -269,18 +267,19 @@ h1 {
 }
 
 .our-cost {
-    margin-top: 45px;
+    margin-top: 75px;
     color: #fff;
 }
 
-.our-cost p {
-    font-family: 'Arial';
+.time {
+    font-family: 'TildaSans-Regular';
+    font-size: 17px;
     color: #D29448;
     margin-bottom: 37px;
 }
 
 .our-holder h3 {
-    font-family: 'Arial';
+    font-family: 'TildaSans-Medium';
     font-weight: 400;
     font-size: 77px;
 
@@ -288,11 +287,13 @@ h1 {
 }
 .our-holder {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 250px;
-    margin-bottom: 62px;
+    margin-bottom: 32px;
 }
-.our-holder p {
+.service {
+    font-family: 'TildaSans-Regular';
+    font-size: 17px;
     color: #fff;
 }
 .yellow-line {
@@ -307,28 +308,189 @@ h1 {
 }
 
 .undelayed {
-    font-family: 'Arial';
-    font-weight: 700;
-    font-size: 22px; 
+    font-family: 'TildaSans-Medium';
+    font-size: 25px; 
     margin-right: 55px;
 
     color: #CB934A;
 }
-
 .our-cost-more p {
-    font-family: 'Arial';
+    font-family: 'TildaSans-Medium', Arial, sans-serif;
+    font-size: 18px;
+    color: #fff;
+
+    font-weight: 500;
+    line-height: 1.75;
+}
+
+.best-offer-circle-img {
+    margin-left: 200px;
+    animation: offer-anim 20s linear infinite;
+}
+
+@keyframes offer-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.offer {
+    font-family: 'TildaSans-Regular';
+    font-weight: 500;
+
+    font-size: 50px;
+    color: #d29448;
+
+    margin-left: 50px;
+    align-self: center;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 230px;
+    margin-top: 80px;
+
+    font-family: 'TildaSans-Medium';
+    font-size: 18px;
+    line-height: 1.75;
+    color: #fff;
+}
+
+.info2 {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    font-family: 'TildaSans-Medium';
+    font-size: 18px;
+    line-height: 1.75;
+    color: #fff;
+}
+.podacha {
+    color: #CB934A;
+}
+
+.container-holder-1 .order-now {
+    margin-top: 0px;
+}
+.container-holder-1 {
+    margin-bottom: 56px;
+}
+
+.yellow-line-1 {
+    width: 1160px;
+    border-color: #D29448;
+    margin-bottom: 113px;
+}
+
+.happend {
+    display: flex;
+    gap: 111px;
+    margin-bottom: 68px;
+    align-items: flex-end;
+
+    color: #EAEAEA;
+}
+.happend p {
+    font-family: 'TildaSans-Medium';
+    line-height: 1.1;
+    font-size: 17px;
+    font-weight: 500;
+}
+.happend-title {
+    font-family: 'TildaSans-Medium';
+    line-height: 1.1;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.steps {
+    display: flex;
+    gap: 50px;
+    color: #eaeaea;
+    margin-bottom: 70px;
+}
+
+
+.block-info h2,
+.block-1-info h2,
+.block-2-info h2{
+    font-family: 'TildaSans-Medium';
+    font-weight: 500;
+    font-size: 130px;
+    color: #C5924C;
+
+    margin-bottom: 37px;
+}
+.block-info p,
+.block-1-info p,
+.block-2-info p {
+    font-family: 'TildaSans-Regular';
     font-weight: 400;
     font-size: 17px;
     
-    line-height: 32px;
-    color: #fff;
-    margin-right: 115px;
+    margin-bottom: 156px;
 }
 
-.our-cost-more h3 {
-    font-family: 'Arial';
-    font-weight: 400;
-    font-size: 49px;
+.block-info,
+.block-1-info,
+.block-2-info {
+    padding-left: 50px;
+    padding-top: 5%;
+    width: 360px;
+    height: 419px;
+}
+.block,
+.block-1,
+.block-2 {
+    opacity: 0;
 
-    color: #D29448;
+    transition: opacity 0.3s;
+}
+.block:hover{
+    width: 360px;
+    height: 419px;   
+    
+    background-image: url(img/noroot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 1;
+}
+.block-1:hover {
+    width: 360px;
+    height: 419px;   
+
+    background-image: url(img/noroot-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 1;
+}
+.block-2:hover {
+    width: 360px;
+    height: 419px;   
+
+    background-image: url(img/noroot-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 1;
+}
+
+.steps-img {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+}
+.container-holder-2 .order-now {
+    margin: 0 auto;
+}
+.container-steps {
+    display: flex;
+    margin-left: 100px;
+    padding-bottom: 133px;
 }

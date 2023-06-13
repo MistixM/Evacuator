@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'TildaSans-Black';
+    src: url(Fonts/TildaSans-Black.ttf);
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'TildaSans-Bold';
+    src: url(Fonts/TildaSans-Black.ttf);
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'TildaSans-Medium';
+    src: url(Fonts/TildaSans-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'TildaSans-Regular';
+    src: url(Fonts/TildaSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TildaSans-Light';
+    src: url(Fonts/TildaSans-Light.ttf);
+    font-weight: 300;
+}
