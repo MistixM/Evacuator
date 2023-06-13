@@ -30,6 +30,20 @@ dd {
   margin: 0;
 }
 
+button {
+    padding: 0; /*Remove padding from button tag*/
+}
+
+/*Disable details marker*/
+details > summary {
+    list-style: none;
+}
+details > summary::marker, /* Latest Chrome, Edge, Firefox */ 
+details > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+}
+
+/*Disable details marker*/
 ul, li {
    list-style-type: none;
 }
@@ -443,43 +457,6 @@ h1 {
     width: 360px;
     height: 419px;
 }
-.block,
-.block-1,
-.block-2 {
-    opacity: 0;
-
-    transition: opacity 0.3s;
-}
-.block:hover{
-    width: 360px;
-    height: 419px;   
-    
-    background-image: url(img/noroot.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    opacity: 1;
-}
-.block-1:hover {
-    width: 360px;
-    height: 419px;   
-
-    background-image: url(img/noroot-1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    opacity: 1;
-}
-.block-2:hover {
-    width: 360px;
-    height: 419px;   
-
-    background-image: url(img/noroot-2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    opacity: 1;
-}
 
 .steps-img {
     align-self: center;
@@ -493,4 +470,239 @@ h1 {
     display: flex;
     margin-left: 100px;
     padding-bottom: 133px;
+}
+
+
+
+.block-info {
+    position: relative;
+}
+
+.block-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/noroot.png); /* Замените path/to/image.jpg на путь к вашему изображению */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.block-info:hover::before {
+    opacity: 1;
+}
+
+.block-info h2,
+.block-info p {
+    position: relative;
+    z-index: 1;
+}
+
+
+.block-1-info {
+    position: relative;
+}
+
+.block-1-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/noroot-1.png); /* Замените path/to/image.jpg на путь к вашему изображению */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.block-1-info:hover::before {
+    opacity: 1;
+}
+
+.block-1-info h2,
+.block-1-info p {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.block-2-info {
+    position: relative;
+}
+
+.block-2-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/noroot-2.png); /* Замените path/to/image.jpg на путь к вашему изображению */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.block-2-info:hover::before {
+    opacity: 1;
+}
+
+.block-2-info h2,
+.block-2-info p {
+    position: relative;
+    z-index: 1;
+}
+
+.container-holder-3 p {
+    color: #C5924C;
+    font-size: 17px;
+    font-family: 'TildaSans-Regular';
+}
+.container-holder-3 h2 {
+    color:#eaeaea;
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'TildaSans-Medium';
+}
+
+.benefits-floor {
+    margin-top: 57px;
+    display: flex;
+    gap: 158px;
+}
+.benefits-floor-1 {
+    margin-top: 57px;
+    display: flex;
+}
+
+.benefits-floor h3,
+.benefits-floor-1 h3 {    
+    font-size: 24px;
+    color: #C5924C;
+    font-weight: 700;
+    font-family: 'TildaSans-Medium';
+
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+.benefits-floor p,
+.benefits-floor-1 p {
+    color: #eaeaea;
+    line-height: 1.55;
+}
+
+.benefits-floor-1 .card-1 {
+    margin-left: 214px;
+}
+.benefits-floor-1 .card-2 {
+    margin-left: 158px;
+}
+
+.container-holder-3 .order-now {
+    margin: 0 auto;
+    margin-top: 85px;
+}
+.container-holder-3 {
+    padding-bottom: 138px;
+}
+
+.container-holder-4 p {
+    color: #C5924C;
+    font-size: 17px;
+    font-family: 'TildaSans-Regular';
+}
+.container-holder-4 h2 {
+    color:#eaeaea;
+    font-size: 80px;
+    font-weight: 500;
+    font-family: 'TildaSans-Medium';
+
+    margin-top: 27px;
+}
+
+
+/* .accordion-btn {
+    background: #19181D;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    width: 1160px;
+    height: 110px;
+    text-align: left;
+
+    border-top: 2px solid #c5924c;
+    font-size: 50px;
+    font-family: 'TildaSans-Regular';
+    font-weight: 600;
+}
+
+.accordion-content {
+    padding: 0 12px;
+    background-color: #19181D;
+    max-height: 0;
+    
+    color: #fff;
+
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.container-holder-4 {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.accordion-content p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #eaeaea;
+
+    font-family: 'TildaSans-Regular';
+    font-size: 17px;
+}
+.accordion {
+    margin-top: 91px;
+} */
+
+.faq-1 {
+    width: 1160px;
+    color: #eaeaea;
+
+    font-family: 'TildaSans-Regular';
+    font-size: 17px;
+}
+
+.faq-1 summary {
+    text-align: center;   
+
+    cursor: pointer;
+
+    border-top: 2px solid #c5924c;
+    font-size: 50px;
+    font-family: 'TildaSans-Regular';
+    font-weight: 600;
+
+    margin-top: 91px;
+}
+
+.faq-1 summary::after {
+    content: "+";   
+    width: 50px;
+    height: 50px;
+    color: #fff;
+
+    font-weight: lighter;
+    font-size: 75px;
+    margin-left: 210px;
+}
+
+details[open] > summary::after {
+    content: "+";
+    transform: rotate(90deg);
 }
