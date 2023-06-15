@@ -611,98 +611,75 @@ h1 {
     padding-bottom: 138px;
 }
 
-.container-holder-4 p {
-    color: #C5924C;
-    font-size: 17px;
-    font-family: 'TildaSans-Regular';
-}
-.container-holder-4 h2 {
-    color:#eaeaea;
-    font-size: 80px;
+
+
+.faq-block h3 {
+    font-size: 2rem;
     font-weight: 500;
+
     font-family: 'TildaSans-Medium';
-
-    margin-top: 27px;
+    font-size: 80px;
+    color: #eaeaea;
+}
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
 }
 
-
-/* .accordion-btn {
-    background: #19181D;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-
-    width: 1160px;
-    height: 110px;
-    text-align: left;
-
-    border-top: 2px solid #c5924c;
-    font-size: 50px;
-    font-family: 'TildaSans-Regular';
-    font-weight: 600;
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
 }
 
-.accordion-content {
-    padding: 0 12px;
-    background-color: #19181D;
-    max-height: 0;
-    
-    color: #fff;
+details summary {
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #C5924C;
+    color: #eaeaea; 
 
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-}
-
-.container-holder-4 {
     position: relative;
-    padding-bottom: 100px;
-}
-
-.accordion-content p {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #eaeaea;
-
-    font-family: 'TildaSans-Regular';
-    font-size: 17px;
-}
-.accordion {
-    margin-top: 91px;
-} */
-
-.faq-1 {
-    width: 1160px;
-    color: #eaeaea;
-
-    font-family: 'TildaSans-Regular';
-    font-size: 17px;
-}
-
-.faq-1 summary {
-    text-align: center;   
-
     cursor: pointer;
-
-    border-top: 2px solid #c5924c;
     font-size: 50px;
-    font-family: 'TildaSans-Regular';
     font-weight: 600;
+    font-family: 'TildaSans-Regular';
 
-    margin-top: 91px;
+    list-style: none;
 }
 
-.faq-1 summary::after {
-    content: "+";   
-    width: 50px;
-    height: 50px;
-    color: #fff;
-
-    font-weight: lighter;
-    font-size: 75px;
-    margin-left: 210px;
-}
-
-details[open] > summary::after {
+details summary:after {
     content: "+";
-    transform: rotate(90deg);
+    color: #eaeaea;
+    position: absolute;
+    font-size: 75px;
+    line-height: 0;
+    right: 0;
+    font-weight: 200;
+    transform-origin: center;
+    transform: translate(0px, 30px);
+    transition: 200ms linear;
+}
+details[open] summary:after {
+    transform: rotate(45deg);
+}
+details summary {
+    width: 1160px;
+}
+
+details p {
+    padding-top: 10px;
+    padding-bottom: 35px;
+    color: #eaeaea; 
+
+    font-size: 17px;
+    font-family: 'TildaSans-Regular';
+
+}
+.container-holder-4 h3 {
+    margin-bottom: 80px;
 }
